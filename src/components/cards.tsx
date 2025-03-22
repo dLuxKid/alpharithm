@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export function MarketPrediction() {
   return (
-    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 overflow-hidden">
-      <div className="flex flex-col gap-4 md:gap-6 flex-1">
+    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col lg:flex-row items-center md:justify-between gap-4 overflow-hidden">
+      <div className="flex flex-col gap-4 md:gap-6 flex-1 md:mb-16 pr-4 sm:pr-8 md:pr-16 lg:pr-0">
         <p className="text-base md:text-xl font-semibold tracking-[-2%] text-[#828282] inter">
           Market Prediction
         </p>
@@ -21,7 +21,7 @@ export function MarketPrediction() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px] aspect-square">
+      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px]">
         <Image src={market} alt="" className="object-fill object-center" />
       </div>
     </div>
@@ -30,8 +30,8 @@ export function MarketPrediction() {
 
 export function Finance() {
   return (
-    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 overflow-hidden">
-      <div className="flex flex-col gap-4 md:gap-6 flex-1">
+    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col lg:flex-row items-center md:justify-between gap-4 overflow-hidden">
+      <div className="flex flex-col gap-4 md:gap-6 flex-1 md:mb-16 pr-4 sm:pr-8 md:pr-16 lg:pr-0">
         <p className="text-base md:text-xl font-semibold tracking-[-2%] text-[#828282] inter">
           Finance
         </p>
@@ -44,7 +44,7 @@ export function Finance() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px] aspect-square">
+      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px]">
         <Image src={finance} alt="" className="object-fill object-center" />
       </div>
     </div>
@@ -53,8 +53,8 @@ export function Finance() {
 
 export function Analytics() {
   return (
-    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 overflow-hidden">
-      <div className="flex flex-col gap-4 md:gap-6 flex-1">
+    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col lg:flex-row items-center md:justify-between gap-4 overflow-hidden">
+      <div className="flex flex-col gap-4 md:gap-6 flex-1 md:mb-16 pr-4 sm:pr-8 md:pr-16 lg:pr-0">
         <p className="text-base md:text-xl font-semibold tracking-[-2%] text-[#828282] inter">
           Data Analytics
         </p>
@@ -67,7 +67,7 @@ export function Analytics() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px] aspect-square">
+      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px]">
         <Image src={analytics} alt="" className="object-fill object-center" />
       </div>
     </div>
@@ -76,8 +76,8 @@ export function Analytics() {
 
 export function Content() {
   return (
-    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 overflow-hidden">
-      <div className="flex flex-col gap-4 md:gap-6 flex-1">
+    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col lg:flex-row items-center md:justify-between gap-4 overflow-hidden">
+      <div className="flex flex-col gap-4 md:gap-6 flex-1 md:mb-16 pr-4 sm:pr-8 md:pr-16 lg:pr-0">
         <p className="text-base md:text-xl font-semibold tracking-[-2%] text-[#828282] inter">
           Content Generation
         </p>
@@ -91,7 +91,7 @@ export function Content() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px] aspect-square">
+      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px]">
         <Image src={content} alt="" className="object-fill object-center" />
       </div>
     </div>
@@ -100,8 +100,8 @@ export function Content() {
 
 export function Customer() {
   return (
-    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 overflow-hidden">
-      <div className="flex flex-col gap-4 md:gap-6 flex-1">
+    <div className="rounded-xl bg-[#F6FAF3] pl-4 sm:pl-8 md:pl-16 pt-4 sm:pt-8 flex flex-col lg:flex-row items-center md:justify-between gap-4 overflow-hidden">
+      <div className="flex flex-col gap-4 md:gap-6 flex-1 md:mb-16 pr-4 sm:pr-8 md:pr-16 lg:pr-0">
         <p className="text-base md:text-xl font-semibold tracking-[-2%] text-[#828282] inter">
           Customer Support
         </p>
@@ -114,7 +114,7 @@ export function Customer() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px] aspect-square">
+      <div className="flex-1 flex justify-end mt-4 md:mt-0 size-full max-w-[520px] max-h-[520px]">
         <Image src={customer} alt="" className="object-fill object-center" />
       </div>
     </div>

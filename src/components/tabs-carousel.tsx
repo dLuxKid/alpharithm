@@ -95,7 +95,7 @@ export default function TabsCarousel() {
         </p>
       </div>
 
-      <div className="w-[200%] 2xl:w-full md:mt-2">
+      <div className="w-[200%] md:mt-2">
         <Swiper
           grabCursor={true}
           centeredSlides={true}
