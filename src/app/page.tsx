@@ -1,103 +1,54 @@
+import ellipse from "@/assets/ellipse.png";
+import CompaniesCarousel from "@/components/companies-carousel";
+import Navbar from "@/components/navbar";
+import TabsCarousel from "@/components/tabs-carousel";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="w-full flex items-center justify-center flex-col min-h-screen">
+      <div className="bg-[#04142B] w-full pt-6 md:py-10 md:h-screen relative">
+        <Navbar />
+        <div className="absolute top-[20%] inset-0">
+          <Image
+            className="size-full object-center object-cover"
+            src={ellipse}
+            alt="hero background img"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="px-[5%] py-16 md:py-0 max-w-screen-2xl mx-auto flex items-center justify-center size-full flex-col gap-6 relative slide-up-fade-in">
+          <h4 className="plus-jakarta capitalize text-[#7191FF] text-center font-bold text-sm md:text-base tracking-[-2%]">
+            Leverage on automation
+          </h4>
+          <h1 className="font-semibold text-white text-center text-2xl sm:text-4xl md:text-[76px]/[82px] tracking-[-2%]">
+            AI Models for <br className="hidden sm:block" />
+            Business Solutions
+          </h1>
+          <p className="plus-jakarta font-medium text-white text-center text-lg md:text-[22px]/[38px] tracking-[-2%]">
+            Leverage the power of AI to automate, analyze, and optimize your
+            workflows. Our <br className="hidden sm:block" /> specialized models
+            are designed are designed to fit different business needs.
+          </p>
+          <button className="bg-white rounded-xl text-black py-3.5 px-[26px] font-semibold text-lg transition-all cursor-pointer hover:bg-white/80">
+            Get Started Now
+          </button>
+        </div>
+      </div>
+      <div className="min-h-screen w-full">
+        <CompaniesCarousel />
+        <div className="h-full py-6 md:py-12 flex flex-col items-center justify-center gap-8 overflow-hidden">
+          <h2 className="mx-[2.5%] text-3xl sm:text-4xl md:text-[50px]/[62px] text-[#22263F] font-semibold tracking-[-2%] text-center">
+            AI Models tailored for your <br className="hidden md:block" />{" "}
+            business needs
+          </h2>
+          <p className="mx-[2.5%] font-medium text-[#828282] text-center text-lg md:text-[22px]/[38px] tracking-[-2%] plus-jakarta">
+            Leverage the power of AI to automate, analyze, and optimize your
+            workflows. Our <br className="hidden sm:block" /> specialized models
+            are designed are designed to fit different business needs.
+          </p>
+          <TabsCarousel />
+        </div>
+      </div>
     </div>
   );
 }
